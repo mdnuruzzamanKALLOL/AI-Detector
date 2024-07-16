@@ -77,7 +77,7 @@ def preprocess_data(new_data):
     return torch.tensor(new_padded_sequences, dtype=torch.long).to(device)
 
 # Streamlit app
-input_text = st.text_area("Enter the email text to classify", height=200)
+input_text = st.text_area("Enter the text to classify", height=200)
 
 if st.button("Classify"):
     if input_text:
